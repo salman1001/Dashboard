@@ -1,0 +1,27 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/piechat12"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:layout_height="@dimen/_250sdp"/>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="@dimen/_250sdp"
+        android:id="@+id/barchat12"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

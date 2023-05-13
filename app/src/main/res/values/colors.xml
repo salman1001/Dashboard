@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bottombarindicatorcolor">#D4f5fa</color>
+    <color name="bottombaricontint">#CFD0E2</color>
+    <color name="bottombaricontintacive">#35b7cf</color>
+    <color name="bottombartextcolor">#35b7cf</color>
+
+
+
+    <color name="splsh">#8E5555</color>
+
+    <color name="sssppll">#FFFFFFFF</color>
+    <color name="toolbarColor">#284060</color>
+    <color name="orange">#ef7f19</color>
+
+    <color name="secondary">#6FA7F1</color>
+
+    <color name="statusbar">#1129D8</color>
+    <color name="ranga">#002d62</color>
+    <color name="bakk">#F7F7FA</color>
+    <color name="crad_bakk">#FFFFFF</color>
+    <color name="primary_text">#565B65</color>
+    <color name="primary_SECC">#9B9A9D</color>
+    <color name="pri">#6A7CFF</color>
+    <color name="dash">#2CC2EA</color>
+    <color name="red">#C55757</color>
+    <color name="green">#A2D590</color>
+    <color name="primary">#1C2E46</color>
+    <color name="received_message_background">#090D16</color>
+    <color name="lightblue">#8C94CD</color>
+    <color name="lightorange">#CF8C3D</color>
+    <color name="testque">#DFDCDC</color>
+    <color name="carrrrrr">#F1EFEF</color>
+    <color name="ripple_foreground.xml">#33FFFFFF</color>
+    <color name="tempsta">#284F80</color>
+    <color name="toolbar_color">#003366</color>
+    <color name="tint_fast_calling">#D81B60</color>
+    <color name="edittext_back">#818181</color>
+
+    <color name="color1">#7784D5</color>
+    <color name="color2">#DDA89F</color>
+    <color name="color3">#ECCFAC</color>
+    <color name="color4">#D6D588</color>
+    <color name="color5">#ADC68A</color>
+    <color name="color6">#70B368</color>
+    <color name="color7">#6DB384</color>
+    <color name="color8">#6DB3A3</color>
+    <color name="color9">#71B5B5</color>
+    <color name="color10">#709EBF</color>
+    <color name="color11">#7A6EA6</color>
+    <color name="color12">#A889BD</color>
+    <color name="color13">#AF6FAC</color>
+    <color name="color14">#A34D61</color>
+
+
+
+
+
+
+
+</resources>

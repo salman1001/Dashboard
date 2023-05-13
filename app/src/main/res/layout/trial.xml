@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0FC"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/top_background"
+            android:padding="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="62dp"
+                android:text="Hello, "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginStart="@dimen/_32sdp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Mohammad Salman"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView"
+                app:layout_goneMarginStart="@dimen/_32sdp" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imageview"
+                android:layout_width="@dimen/_62sdp"
+                android:layout_height="@dimen/_62sdp"
+                android:src="@drawable/profile"
+                app:layout_constraintBottom_toBottomOf="@+id/textView1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/vie"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/white_bg"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+
+                    android:src="@drawable/voice_call"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="@dimen/_1sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="Voice Call"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/notification"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="@dimen/_1sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="Notifications"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/video_call"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="@dimen/_1sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="Video Calls"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/search_bar"
+        style="@style/SimpleTextStyle"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/custom_searchview_background"
+        android:drawableEnd="@drawable/custom_search_icon"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Search for anything..."
+        android:paddingStart="@dimen/_10sdp"
+        android:singleLine="true"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        android:paddingTop="@dimen/_32sdp"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:weightSum="3"
+            android:id="@+id/ll1"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/voice_call"
+                    android:layout_height="@dimen/_40sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Facebook"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/notification"
+                    android:layout_height="@dimen/_40sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Youtube"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/video_call"
+                    android:layout_height="@dimen/_40sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Twitter"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/whatsapp"-->
+
+<!--                android:layout_height="@dimen/_40sdp"/>-->
+<!--            <ImageView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/instagram"-->
+
+<!--                android:layout_height="@dimen/_40sdp"/>-->
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/ll1"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:weightSum="3"
+            android:id="@+id/ll2"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/notification"
+                    android:layout_height="@dimen/_40sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Gmail"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/voice_call"
+                    android:layout_height="@dimen/_40sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Instagram"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:src="@drawable/video_call"
+                    android:layout_height="@dimen/_40sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Whatsapp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:src="@drawable/whatsapp"-->
+
+            <!--                android:layout_height="@dimen/_40sdp"/>-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:src="@drawable/instagram"-->
+
+            <!--                android:layout_height="@dimen/_40sdp"/>-->
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardHeadertt2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFF0FC"
+
+
+        android:layout_alignParentBottom="true"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:weightSum="3"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/singlechat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:tint="#2C3FC3"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_2sdp"
+
+
+                    android:src="@drawable/chattingttr" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="Chat"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8ssp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/groupchat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:tint="#2C3FC3"
+
+
+
+                    android:src="@drawable/team" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Group Chat"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8ssp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/movetodialer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:tint="#2C3FC3"
+
+
+                    android:src="@drawable/dialttr" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Dialer"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

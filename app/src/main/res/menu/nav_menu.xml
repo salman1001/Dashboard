@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_chapters"
+        android:title="Rate"
+        android:icon="@drawable/video_call"/>
+
+    <item android:id="@+id/nav_tests"
+        android:title="Rate"
+        android:icon="@drawable/search_icon"/>
+
+    <item android:id="@+id/nav_prev"
+        android:title="Rate"
+        android:icon="@drawable/search_icon"/>
+
+    <item android:id="@+id/nav_hcverma"
+        android:title="Rate"
+        android:icon="@drawable/search_icon"/>
+
+
+    <item android:id="@+id/nav_dc"
+        android:title="Rate"
+        android:icon="@drawable/search_icon"/>
+    <item android:id="@+id/nav_iro"
+        android:title="Rate"
+        android:icon="@drawable/search_icon"/>
+
+
+
+    <item android:id="@+id/nav_jeenoti"
+        android:title="Share"
+        android:icon="@drawable/search_icon"/>
+    <item android:id="@+id/nav_cutoff"
+        android:title="Share"
+        android:icon="@drawable/search_icon"/>
+    <item android:id="@+id/nav_rate"
+        android:title="Rate"
+        android:icon="@drawable/search_icon"/>
+    <item android:id="@+id/nav_share"
+        android:title="Share"
+        android:icon="@drawable/search_icon"/>
+
+
+
+</menu>
